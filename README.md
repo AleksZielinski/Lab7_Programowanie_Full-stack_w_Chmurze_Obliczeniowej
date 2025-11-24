@@ -10,7 +10,7 @@
   `wget --spider --timeout=1 http://remoteweb.remote.svc.cluster.local`
 - Zweryfikowano działanie NodePort:
   - z węzła Minikube: `minikube ssh` + `curl http://localhost:31999`
-  - z hosta: `curl http://$(minikube ip):31999` (w zależności od konfiguracji sieci hosta).
+  - z hosta: `curl http://$(minikube ip):31999`.
 
 # Pliki w repozytorium:
 
@@ -40,4 +40,5 @@
   - Służy jako narzędzie testowe do:
     - sprawdzania DNS w klastrze,
     - testowania połączenia HTTP z usługą „remoteweb”.
+
 
