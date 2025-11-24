@@ -1,6 +1,6 @@
-Laboratorium 7
+# Laboratorium 7
 
-Co zostało zrobione:
+# Co zostało zrobione:
 - Uruchomiono klaster Minikube z CNI Calico.
 - Utworzono przestrzeń nazw „remote”.
 - W przestrzeni „remote” uruchomiono Pod „remoteweb” z serwerem Nginx.
@@ -12,7 +12,7 @@ Co zostało zrobione:
   - z węzła Minikube: `minikube ssh` + `curl http://localhost:31999`
   - z hosta: `curl http://$(minikube ip):31999` (w zależności od konfiguracji sieci hosta).
 
-Pliki w repozytorium:
+# Pliki w repozytorium:
 
 - `namespace-remote.yaml`  
   - Definiuje przestrzeń nazw „remote”, w której uruchamiane są zasoby aplikacji.  
@@ -40,3 +40,4 @@ Pliki w repozytorium:
   - Służy jako narzędzie testowe do:
     - sprawdzania DNS w klastrze,
     - testowania połączenia HTTP z usługą „remoteweb”.
+
